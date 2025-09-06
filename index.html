@@ -1,339 +1,193 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Invoice</title>
-
-  <!-- ✅ Fuente Montserrat -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Montserrat', Arial, sans-serif;
-      padding: 170px;
-      background-color: rgb(165, 180, 182);
-    }
-
-    h1, h3 {
-      font-family: 'Montserrat', Arial, sans-serif;
-      font-weight: 700;
-    }
-
-    .zero {
-      width: 60%;
-      margin: auto;
-    }
-
-    .one, .two, .three, .four, .five, .six {
-      display: grid;
-      grid-template-columns: 70% 30%;
-    }
-
-    .one .left, .three .left {
-      background-color: rgba(233, 234, 235, 0.541);
-    }
-
-    .four {
-      height: 300px;
-    }
-
-    .left {
-      background-color: #f9f9f9;
-      color: black;
-      padding: 15px;
-      overflow-wrap: break-word;
-    }
-
-    .right-one, .right-two, .right-three, .right-four, .right-five, .right-six {
-      background-color: #223f57;
-      color: white;
-      padding: 15px;
-      text-align: center;
-    }
-
-    .three .left table, .right-three table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    .three .left th, .three .left td,
-    .right-three th, .right-three td {
-      padding: 10px;
-      text-align: left;
-    }
-
-    table {
-      border-collapse: separate;
-      border-spacing: 40px 20px;
-    }
-
-    .line1, .line2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .two-columns {
-      display: flex;
-      justify-content: space-between;
-      gap: 40px;
-      flex-wrap: wrap;
-      align-items: flex-start;
-    }
-
-    .texto2, .invoice-to {
-      flex: 1;
-    }
-
-    .company-header {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 15px;
-    }
-
-    .company-logo {
-      width: 60px;
-      height: auto;
-      object-fit: contain;
-    }
-
-    .company-text h1 {
-      font-size: 1.8em;
-      margin: 0;
-    }
-
-    .company-text p {
-      font-size: 0.9em;
-    }
-
-    .invoice-to {
-      text-align: right;
-    }
-
-    .four p,
-    .right-four p {
-      line-height: 3.0;
-    }
-    .right-one h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 350;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 35px;
-    
-    }
-
-    .textoo{
-      padding: 10px;
-    }
-
-    .right-two{
-      line-height: 2.0;
-      font-size: small;
-    }
-
-    .texto2 p{
-      font-size: small;
-    }
-    .invoice-to{
-      font-size: 15px;
-    }
-    .Subtotal, .relleno{
-      display: grid;
-      grid-template-columns: 1fr, 1fr;
-      text-align: right;
-    }
-    
-
-    @media (max-width: 768px) {
-      body {
-        padding: 20px;
-      }
-
-      .zero {
-        width: 100%;
-      }
-
-      .one, .two, .three, .four, .five, .six {
-        grid-template-columns: 1fr;
-      }
-
-      .company-header {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .company-logo {
-        width: 80px;
-      }
-
-      .left, .right-one, .right-two, .right-three, .right-four, .right-five, .right-six {
-        width: 100%;
-        padding: 10px;
-      }
-
-      table {
-        font-size: 14px;
-        border-spacing: 20px 10px;
-      }
-
-      h1, h3 {
-        font-size: 1.2em;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./factura1.css" />
+    <title>Factura</title>
 </head>
 
 <body>
-  <div class="zero">
-    <!-- Header -->
-    <div class="one">
-      <div class="left company-header">
-        <img src="img/WhatsApp Image 2025-07-26 at 8.16.17 AM.png" alt="Company Logo" class="company-logo">
-        <div class="company-text">
-          <h1>COMPANY NAME</h1>
-          <p>BRANDING TAGLINE SPACE HERE</p>
-        </div>
-      </div>
-      <div class="right-one">
-        <div class="textoo">
-          <h1>INVOICE</h1>
-        </div>
-        
-      </div>
-    </div>
+    <div class="Padre">
+        <div class="zero">
 
-    <!-- Invoice Info -->
-    <div class="two">
-      <div class="left two-columns">
-        <div class="texto2">
-          <h3><b>Additional notes</b></h3>
-          <p>
-            Ut enim ad minim veniam qula <br>
-            nostrud exercitation <br>
-            ullamco laboris nisi <br>
-            ut aliquip ex ea commodo consequat
-          </p>
+        <div class="one">
+            <div class="one1">
+                <div><img class="logo" src="LOGO (2).png" alt="logo"></div>
+                <div class="logo1">
+                   
+                <h1 class="titulo"> COMPANY NAME</h1>
+                <span class="titulo" style="color:#766f6d">BRANDING TAGLINE SPACE HERE</span>
+                </div>
+            </div>
+            <div class="one2">
+                <div class="o2" >
+                    <h1>INVOICE</h1>
+                </div>
+            </div>
         </div>
-        <div class="invoice-to">
-          <h3><b>Invoice to:</b></h3>
-          <p><b>JOHN SMITH</b></p>
-          <p>123 GREEN LAKE ST.</p>
-          <p>CITY STATE</p>
-          <p>COUNTRY</p>
+
+        <div class="two">
+            <div class="two1">
+                <div class="text1">
+                    <h3> <b>Additional notes</b></h3>
+                    <p>Ut enim ad minim veniam qula nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo
+                        consequat</p>
+                </div>
+
+                <div class="text2">
+                    <div class="texto1">
+                        <h3> Invoice to:</h3>
+                        <a><b> JOHN SMITH</b></a>
+                        <p>123 GREEN LAKE ST.</p> 
+                        <p>CITY STATE </p>
+                        <p>COUNTRY </p>
+                    </div>
+                </div>
+            </div>
+            <div class="two2">
+                <div class="texto2">
+                    <b>INVOICE DATE</b> 
+                    <span style="color:#e6e5e5"> 03.02.20 </span><br><br>
+                    <b>DUE DATE </b> 
+                    <span style="color:#e6e5e5">03.12.201 </span> <br><br>
+                    <b>INVOICE # </b> 
+                    <span style="color:#e6e5e5">14256 </span>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="three">
+            <div class="three1">
+                <table class="tabla1">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="margin-right: 10px;">#</th>
+                            <th scope="col">Product Description</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Item 1</td>
+                            <td style="width: 20px;">$30.50</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Item 2</td>
+                            <td>$50.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Item 3</td>
+                            <td>$70.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Item 4</td>
+                            <td>$20.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="three2">
+                <table class="t2" style="color: white;">
+                    <thead>
+                        <tr>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>$91.50</td>
+                    </tr>
 
-      <div class="right-two">
-        <h3>INVOICE DATE</h3>
-        <p>03.02.20</p>
-        <h3>DUE DATE</h3>
-        <p>03.12.201</p>
-        <h3>INVOICE #</h3>
-        <p>14256</p>
-      </div>
-    </div>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>$50.00</td>
+                    </tr>
 
-    <!-- Items -->
-    <div class="three">
-      <div class="left">
-        <table>
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Product Description</th>
-              <th>Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>1</td><td>Item 1</td><td>$30.50</td></tr>
-            <tr><td>2</td><td>Item 2</td><td>$50.00</td></tr>
-            <tr><td>3</td><td>Item 3</td><td>$70.00</td></tr>
-            <tr><td>4</td><td>Item 4</td><td>$20.00</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="right-three">
-        <table>
-          <thead>
-            <tr><th>Qty</th><th>Total</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>3</td><td>$91.50</td></tr>
-            <tr><td>1</td><td>$50.00</td></tr>
-            <tr><td>5</td><td>$350.00</td></tr>
-            <tr><td>2</td><td>$40.00</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>$350.00</td>
+                    </tr>
 
-    <!-- Subtotals -->
-    <div class="four">
-      <div class="left" style="text-align: right;">
-        <div class="relleno"></div>
-        <div class="Subtotal">
-          <p><b>Subtotal</b></p>
-        <p><b>Taxes</b></p>
-        <p><b>Shipping</b></p>
-        <p><b>Discount</b></p>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>$40.00</td>
+                    </tr>
+                </table>
+            </div>
         </div>
-        
-        
-      </div>
-      <div class="right-four">
-        <p>$531.80</p>
-        <p>$63.78</p>
-        <p>$72.00</p>
-        <p>-$15.00</p>
-      </div>
-    </div>
-
-    <!-- Terms & Total -->
-    <div class="five">
-      <div class="left">
-        <h3>Terms and Conditions</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Doloribus ipsam eius tenetur itaque praesentium
-          nemo<br> totam, voluptate laudantium<br> maiores rem assumenda obcaecati minus<br> voluptatem doloremque adipisci veritatis
-          ut velit nam?</p>
-      </div>
-      <div class="right-five">
-        <h3>Total</h3>
-        <p style="font-size: 1.5em;">$652.58</p>
-      </div>
-    </div>
-
-    <!-- Payment Method -->
-    <div class="six">
-      <div class="left">
-        <h3>Payment Method</h3>
-        <div class="line1">
-          <p>⚫ Cash/Debit</p>
-          <p>⚫ Cheque</p>
-          <p>⚫ Credit card</p>
+        <div class="four">
+            <div class="four1">
+                <div></div>
+                <div class="fo1">
+                    <h4>Subtotal</h4>
+                    <h4>Taxes</h4>
+                    <h4>Shipping</h4>
+                    <h4>Discount</h4>
+                </div>
+            </div>
+            <div class="four2">
+                <div class="fo2" >
+                    <h4>$531.80</h4>
+                    <h4>$63.78</h4>
+                    <h4>$17.00</h4>
+                    <h4>-$15.00</h4>
+                </div>
+            </div>
         </div>
-        <p>Cardholder's Name</p>
-        <div class="line2">
-          <p>Card #</p>
-          <p>Exp</p>
-          <p>CV</p>
+        <div class="five">
+            <div class="five1">
+                <div class="f">
+                    <h3 style="text-align: left; margin-left: 10%;"> Term and conditions</h3>
+                    <p class="p" style="text-align: left; margin-left: 10%;">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ipsam eius tenetur itaque.
+                    </p>
+                </div>
+                <h3 class="f1"  >TOTAL</h3>
+            </div>
+            <div class="five2">
+                <div class="f2">
+                    <h3>$597.58</h3>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="right-six">
-        <p>_______________________</p>
-        <p>Signature</p>
-      </div>
+        <div class="six">
+            <div class="six1">
+                <div class="payment" style="text-align: left;">
+                    <h3 style="margin-left: 10px;">Payment Method</h3>
+                    <div class="line1">
+                        <p>⚪Cash/Debit </p>
+                        <p>⚪Cheque</p>
+                        <p>⚪Credit card</p>
+                    </div>
+                    <p class="barra">Cardholder's Named <span><span></span></span></p>
+                    <div class="line2">
+                        <p class="barra1">Card # <span><span></span></span></p>
+                        <p class="barra2">Exp <span><span></span></span></p>
+                        <p class="barra2">CV<span><span></span></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="six2">
+                <div class="s2">
+                   <p> 
+                    _______________________<br>
+                    Signature
+                    </p>
+                </div>
+            </div>
+
     </div>
-  </div>
+    </div>
+    
 </body>
 
 </html>
-
